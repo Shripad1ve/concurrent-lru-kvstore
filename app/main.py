@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel
 from typing import Any
+from builtins import str
 from app.lru_engine import ThreadSafeLRUCache
 
 app = FastAPI(title="High-Throughput LRU Cache Service")
